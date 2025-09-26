@@ -5,7 +5,7 @@
 
   function log(...args) {
     console.log(`[BOHDAN]`, args);
-    alert(`[BOHDAN]`, args);
+    alert(`[BOHDAN]` + args);
   };
 
   var Defined = {
