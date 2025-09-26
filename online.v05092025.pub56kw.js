@@ -7,7 +7,7 @@
     console.log(`[BOHDAN]`, args);
     alert(`[BOHDAN]`, args);
   };
-  
+  alert(`[BOHDAN]1`);
   var Defined = {
     api: 'lampac',
     localhost: 'https://rc.bwa.to/',
