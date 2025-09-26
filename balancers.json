@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lumex - 1080p",
+    "url": "https://rc.bwa.to/lite/videocdn",
+    "balanser": "videocdn"
+  },
+  {
+    "name": "Filmix - 480p",
+    "url": "https://rc.bwa.to/rc/filmix",
+    "balanser": "rc/filmix"
+  },
+  {
+    "name": "HDVB - 1080p",
+    "url": "https://rc.bwa.to/lite/hdvb",
+    "balanser": "hdvb"
+  },
+  {
+    "name": "VeoVeo - 1080p",
+    "url": "https://rc.bwa.to/lite/veoveo",
+    "balanser": "veoveo"
+  },
+  {
+    "name": "Ashdi (Украинский) - 1080p",
+    "url": "https://rc.bwa.to/lite/ashdi",
+    "balanser": "ashdi"
+  },
+  {
+    "name": "CDNmovies - 360p",
+    "url": "https://rc.bwa.to/lite/cdnmovies",
+    "balanser": "cdnmovies"
+  },
+  {
+    "name": "Kinotochka - 480p",
+    "url": "https://rc.bwa.to/lite/kinotochka",
+    "balanser": "kinotochka"
+  },
+  {
+    "name": "Filmix - 4K HDR",
+    "url": "https://rc.bwa.to/rc/filmixpro",
+    "balanser": "rc/filmixpro"
+  },
+  {
+    "name": "KinoPub - 4K HDR",
+    "url": "https://rc.bwa.to/rc/kinopubpro",
+    "balanser": "rc/kinopubpro"
+  },
+  {
+    "name": "Rezka - 2160p",
+    "url": "https://rc.bwa.to/rc/rhs",
+    "balanser": "rc/rhs"
+  }
+]

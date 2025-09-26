@@ -26,7 +26,6 @@
 
   if (!window.rch || !window.rch[hostkey]) {
     console.clear();
-    log(1, `!window.rch || !window.rch[hostkey]`);
     Lampa.Utils.putScript(["https://rc.bwa.to/invc-rch.js"], function() {
       var checkRch = setInterval(function() {
         if (window.rch && window.rch[hostkey] && window.rch[hostkey].typeInvoke) {
@@ -317,7 +316,9 @@
       }
     };
     this.startSource = function(json) {
+
       return new Promise(function(resolve, reject) {
+        console.log(json)
         json.forEach(function(j) {
           var name = balanserName(j);
           sources[name] = {
@@ -421,11 +422,11 @@
         network.silent(account(url), function(json) {
           if (json.accsdb) return reject(json);
           if (json.life) {
-			_this4.memkey = json.memkey;
-			if (json.title) {
+            _this4.memkey = json.memkey;
+            if (json.title) {
               if (object.movie.name) object.movie.name = json.title;
               if (object.movie.title) object.movie.title = json.title;
-			}
+            }
             filter.render().find('.filter--sort').append('<span class="lampac-balanser-loader" style="width: 1.2em; height: 1.2em; margin-top: 0; background: url(./img/loader.svg) no-repeat 50% 50%; background-size: contain; margin-left: 0.5em"></span>');
             _this4.lifeSource().then(_this4.startSource).then(resolve)["catch"](reject);
           } else {
