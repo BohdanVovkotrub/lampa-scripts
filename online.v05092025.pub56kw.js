@@ -5,9 +5,8 @@
 
   function log(...args) {
     console.log(`[BOHDAN]`, args);
-    alert(`[BOHDAN]`, args);
   };
-  alert(`[BOHDAN]1`);
+
   var Defined = {
     api: 'lampac',
     localhost: 'https://rc.bwa.to/',
@@ -1562,6 +1561,7 @@ else if (element.url) {
   }
 
   function startPlugin() {
+    log(`startPlugin`)
     window.bwarch_plugin = true;
     var manifst = {
       type: 'video',
