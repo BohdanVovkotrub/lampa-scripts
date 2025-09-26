@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  console.clear();
   
+
   function log(...args) {
     console.log(`[BOHDAN]`, args);
   };
@@ -24,6 +24,7 @@
   var hostkey = 'https://rc.bwa.to'.replace('http://', '').replace('https://', '');
 
   if (!window.rch || !window.rch[hostkey]) {
+    console.clear();
     log(1, `!window.rch || !window.rch[hostkey]`);
     Lampa.Utils.putScript(["https://rc.bwa.to/invc-rch.js"], function() {
       var checkRch = setInterval(function() {
