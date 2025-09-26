@@ -1,10 +1,12 @@
 (function() {
   'use strict';
 
+  console.clear();
+  
   function log(...args) {
     console.log(`[BOHDAN]`, args);
   };
-
+  
   var Defined = {
     api: 'lampac',
     localhost: 'https://rc.bwa.to/',
@@ -22,7 +24,7 @@
   var hostkey = 'https://rc.bwa.to'.replace('http://', '').replace('https://', '');
 
   if (!window.rch || !window.rch[hostkey]) {
-    log(1, `!window.rch || !window.rch[hostkey]`)
+    log(1, `!window.rch || !window.rch[hostkey]`);
     Lampa.Utils.putScript(["https://rc.bwa.to/invc-rch.js"], function() {
       var checkRch = setInterval(function() {
         if (window.rch && window.rch[hostkey] && window.rch[hostkey].typeInvoke) {
