@@ -5,6 +5,7 @@
 
   function log(...args) {
     console.log(`[BOHDAN]`, args);
+    alert(`[BOHDAN]`, args);
   };
 
   var Defined = {
@@ -412,6 +413,7 @@
       });
     };
     this.createSource = function() {
+      log('Create sorce!')
       var _this4 = this;
       return new Promise(function(resolve, reject) {
         var url = _this4.requestParams(Defined.localhost + 'lite/events?life=true');
@@ -1561,7 +1563,6 @@ else if (element.url) {
   }
 
   function startPlugin() {
-    log(`startPlugin`)
     window.bwarch_plugin = true;
     var manifst = {
       type: 'video',
