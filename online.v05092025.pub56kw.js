@@ -429,6 +429,7 @@
             filter.render().find('.filter--sort').append('<span class="lampac-balanser-loader" style="width: 1.2em; height: 1.2em; margin-top: 0; background: url(./img/loader.svg) no-repeat 50% 50%; background-size: contain; margin-left: 0.5em"></span>');
             _this4.lifeSource().then(_this4.startSource).then(resolve)["catch"](reject);
           } else {
+            log({json})
             _this4.startSource(json).then(resolve)["catch"](reject);
           }
         }, reject);
