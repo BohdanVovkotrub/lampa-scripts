@@ -1823,23 +1823,23 @@
   Lampa.Storage.listener.follow('change', function (event) {
     if (event.name == 'activity') {
       //   console.log('Lampa.Activity.active().component', Lampa.Activity.active().component)
-      if (Lampa.Activity.active().component == 'smotrolet') {
-        var add_ads = setInterval(function () {
-          if (document.querySelector('.online-prestige-watched') !== null) {
-            // $('.online-prestige-watched').after(botElement);
-            $('.online-prestige-watched').remove();
-            clearInterval(add_ads);
-            Lampa.Controller.toggle('content');
-          }
-        }, 50);
-        var add_ads2 = setInterval(function () {
-          if (document.querySelector('.filter--sort') !== null) {
-            $('.filter--sort').remove();
-            clearInterval(add_ads2);
-            Lampa.Controller.toggle('content');
-          }
-        }, 50);
-      }
+      // if (Lampa.Activity.active().component == 'smotrolet') {
+      //   var add_ads = setInterval(function () {
+      //     if (document.querySelector('.online-prestige-watched') !== null) {
+      //       // $('.online-prestige-watched').after(botElement);
+      //       $('.online-prestige-watched').remove();
+      //       clearInterval(add_ads);
+      //       Lampa.Controller.toggle('content');
+      //     }
+      //   }, 50);
+      //   var add_ads2 = setInterval(function () {
+      //     if (document.querySelector('.filter--sort') !== null) {
+      //       $('.filter--sort').remove();
+      //       clearInterval(add_ads2);
+      //       Lampa.Controller.toggle('content');
+      //     }
+      //   }, 50);
+      // }
     }
   })
 
