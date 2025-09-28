@@ -270,6 +270,7 @@
       Lampa.Controller.enable('content');
       this.loading(false);
       if (object.balanser) {
+        console.log(11111, object.balanser);
         files.render().find('.filter--search').remove();
         sources = {};
         sources[object.balanser] = { name: object.balanser };
@@ -1584,7 +1585,7 @@
       },
       onSelect: function (params, close) {
         close();
-alert(JSON.stringify(params.element, null, 2));
+
         Lampa.Activity.push({
           url: params.element.url,
           title: 'Lampac - ' + params.element.title,
@@ -1764,7 +1765,7 @@ alert(JSON.stringify(params.element, null, 2));
 
         var id = Lampa.Utils.hash(e.movie.number_of_seasons ? e.movie.original_name : e.movie.original_title);
         var all = Lampa.Storage.get('clarification_search', '{}');
-
+        console.log({all})
         Lampa.Activity.push({
           url: '',
           title: Lampa.Lang.translate('title_online'),
