@@ -1813,7 +1813,7 @@
       balansers_sync.forEach(function (name) {
         Lampa.Storage.sync('online_choice_' + name, 'object_object');
       });
-      Lampa.Storage.sync('online_watched_last', 'object_object');
+      // Lampa.Storage.sync('online_watched_last', 'object_object');
     }
   }
 
