@@ -1584,7 +1584,7 @@
       },
       onSelect: function (params, close) {
         close();
-
+alert(JSON.stringify(params.element, null, 2));
         Lampa.Activity.push({
           url: params.element.url,
           title: 'Lampac - ' + params.element.title,
@@ -1596,6 +1596,8 @@
           balanser: params.element.balanser,
           noinfo: true
         });
+
+        
       }
     }
 
